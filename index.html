@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<title>表单</title>
+  	<meta charset="UTF-8">
+</head>
+<body>
+    <h1>毕业生信息</h1>
+    <form id="testform" method="get" action="">
+    
+    <fieldset style="width:500px;">
+        <legend style="color: red;">学生信息</legend>
+        姓&nbsp;&nbsp;名 <input type="text" placeholder="请输入姓名" name="name"/><span>*</span>
+        <br/>
+        学&nbsp;&nbsp;号 <input type="text" placeholder="请输入学号" name="id"/><span>*</span>
+        <br/>
+        手&nbsp;&nbsp;机 <input type="tel" placeholder="请输入手机号" name="phone"/><span>*</span>
+        <br/>
+        邮&nbsp;&nbsp;箱 <input type="email" placeholder="请输入邮箱地址" name="email" /><span>*</span>
+        <br/>
+    </fieldset>
+    <br/>
+    <fieldset  style="width:500px;">
+        <legend style="color: red;">录取情况</legend>
+        录取学校 <input type="text" name="school">
+        <br/>
+        入学成绩 <input type="text" name="score"/>
+        <br/>
+        入学时间 <input style="font-weight: bold;" type="date" name="time"/>
+    </fieldset>
+    <br/>
+    <input type="submit" value="提交"/>
+    </form>
+	
+</body>
+    <script>
+        var sp=document.getElementsByTagName("span");
+        for(var i=0;i<sp.length;i++){
+            sp[i].style.color="red";
+        }
+
+    </script>
+</html>
+
+
