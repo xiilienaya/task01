@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding:0;
+        margin: 0;
+    }
+#box1{
+    height:347px;
+    width:297px;
+    /* border:1px solid rgb(73, 22, 139); */
+    padding:3px 4px;
+    margin:0 auto;
+    background-color: rgb(230, 230, 230);
+}
+#im{
+    width:297px;
+    height:220px;
+    overflow: hidden;
+    position:absolute;
+}
+#img{
+    width:297px;
+    height:220px;
+    transition:all 0.5s linear;
+}
+#box1:hover #img{
+    transform: scale(1.3,1.3);
+    filter: brightness(0.7);
+    transition:all 0.2s linear;
+}
+#box2{
+    width:37px;
+    height:37px;
+    border-radius: 22px;
+    padding:3px 3px;
+    position: relative;
+    left:230px;
+    top:10px;
+    background-color: rgb(255, 121, 87);
+    font-size:12px;
+    font-weight:bold;
+    text-align: center;
+    color: white;
+}
+#box3{
+    height:150px;
+    width:298px;
+    /* border:1px solid red; */
+    margin-top:150px;
+    position: relative;
+    background: linear-gradient(transparent 20px,white 20px,white);
+    transition: all 0.5s linear;
+}
+#sp1{
+    width:50px;
+    height:21px;
+    text-align: center;
+    line-height:20px;
+    font-size:13px;
+    color: white;
+    background:rgb(255, 115, 0);
+}
+#box4{
+    width:265px;
+    margin-left:15px;
+}
+#p1{
+    font-size:12px;
+    color:transparent;
+    line-height:20px; 
+}
+#s1{
+    font-size:10px;
+    margin-left:20px;
+    position: fixed;
+    top:320px;
+    color: rgb(155, 155, 155);
+}
+#box1:hover #box3 {
+    height:230px;
+    margin-top:70px;
+    transition:all 0.3s linear;
+}
+#box1:hover #p1{
+    color: grey;
+    transition:all 0.2s linear;
+} 
+#box1:hover{
+    background-color: rgb(199, 199, 199);
+}
+
+</style>
+<body>
+    <div id="box1">
+        <div id="im">
+            <img  id="img" src="images/zhanqiao.jpg">
+        </div>
+        <div id="box2"><span >15</span><p>五月</p></div>
+        <div id="box3">
+            <div id="sp1">照片</div>
+            <div id="box4">
+                    <h4 style="margin-top:15px;">青岛栈桥</h2>
+                    <p style="margin-top:5px;;color: rgb(255, 94, 0);font-size:14px;">国家AAAA级旅游景区</p>
+                    <p id="p1">青岛栈桥是青岛海滨风景区的景点之一，是国务院于1982年首批公布的国家级风景名胜区。青岛栈桥位于游人如织的青岛中山路南端，桥身从海岸探入如弯月般的青岛湾深处。桥身供游人参观并在此停靠旅游船，由此乘船可看海上青岛。</p>                   
+            </div>
+            <span id="s1">10分钟前 &nbsp;&nbsp;&nbsp;&nbsp;123评论</span>
+        </div>
+
+    </div>
+</body>
+</html>
